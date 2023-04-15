@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome.min.css" />
 		<link rel="stylesheet" href="assets/css/home.css" />
         <link rel="shortcut icon" href="assets/images/logor.png" type="image/png">
 		<title>HeyFood</title>
@@ -16,10 +18,10 @@
 			<div class="nav-links">
 				<ul class="display-flex align-center">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="services.html">Services</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
 					<li><div class="button">apply for loan</div></li>
 				</ul>
 			</div>
@@ -34,7 +36,31 @@
 				<h2>How much you want ?</h2>
 				<p>We provide online instant cash loans.</p>
 				<form action="#" method="post">
+					<div class="banner_form_item">
+						<label for="amount">amount you want</label>
+						<select name="amount" id="amount">
+							<option value="" selected disabled>Select amount</option>
+							<option value="">Category 1</option>
+							<option value="">Category 2</option>
+							<option value="">Category 3</option>
+							<option value="">Category 4</option>
+						</select>
+					</div>
 
+					<div class="banner_form_item">
+						<label for="month">month</label>
+						<select name="month" id="month">
+							<option value="" selected disabled>Select Month</option>
+							<option value="">Year</option>
+							<option value="">Week</option>
+							<option value="">Days 3</option>
+						</select>
+					</div>
+					<label for="">you have to pay <span>$0</span></label>
+					<div class="banner_form_item">
+						<button type="submit" id="combo">APPLY NOW</button>
+					</div>
+					<p>We provide online instant cash loans.</p>
 				</form>
 			</div>
 		</section>
@@ -297,9 +323,15 @@
 				<h2>Newsletter</h2>
 				<span>Subscribe to our newsletter</span>
 				<form action="">
-					<input type="email" name="" id="" placeholder="type email" />
-					<input type="button" value="Submit" class="button" />
+					<input type="email" name="" id="" placeholder="Type email" />
+					<button type="button" class="button" ><img src="../assets/images/Sent.png" alt="sent"></button>
 				</form>
+				<div class="social_med">
+					<a href="#"><img src="/assets/images/1.png" alt="linkdin"></a>
+					<a href="#"><img src="/assets/images/2.png" alt="tweeter"></a>
+					<a href="#"><img src="/assets/images/3.png" alt="facebook"></a>
+					<a href="#"><img src="/assets/images/4.png" alt="instagram"></a>
+				</div>
 			</div>
 		</footer>
 	</body>
