@@ -82,8 +82,8 @@ li {
   height: 16px;
   object-fit: fill;
 }
-.plane {
-  background-image: url("../images/Blog/favicon/plane-solid.svg");
+.coins {
+  background-image: url("../images/Blog/favicon/coins-solid.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
