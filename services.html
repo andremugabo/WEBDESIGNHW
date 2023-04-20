@@ -37,7 +37,7 @@
 			<div class="type_of_services">
 				<div class="col_services">
 					<div class="col_services_icon">
-						<img src="assets/images/house1.png" alt="house">
+						<img src="assets/images/House.png" alt="house">
 					</div>
 					<div class="services_text">
 						<span>Home Loan</span>
@@ -57,7 +57,7 @@
 				</div>
 				<div class="col_services">
 					<div class="col_services_icon">
-						<img src="assets/images/warehouse3.png" alt="house">
+						<img src="assets/images/Hangar.png" alt="house">
 					</div>
 					<div class="services_text">
 						<span>Home Loan</span>
@@ -91,7 +91,69 @@
 				<img src="assets/images/sev.jpg" alt="servicesomg">
 			</div>
 		</section>
-		<section class="section3"></section>
+		<section class="section3">
+			<div class="inner_section3">
+				<div class="slide_inner_section3_1 hide">
+					<p> I can honestly say Brent Mendelson made my first home 
+						buying experience a very pleasant one. From our 
+						first conversation he explained each and every option 
+						that was available to me and I never felt pressured into any decision.
+						 My phone calls were handled in a professional and timely manner.
+						  All in all I really couldn't imagine my home buying process being any easier. 
+						  Even now that the deal is done I would still feel 100% 
+						  comfortable calling Brent with any questions. 
+						  He extended his expertise beyond the scope of the business 
+						  deal and I look forward to contacting Brent for my next home purchase.
+						 Thanks for everything Brent!!
+					</p>
+					<div class="slide_pic">
+						<img src="assets/images/tmo.png" alt="testimonialimg"><span>John Doe</span>
+					</div>	
+				</div>
+				<div class="slide_inner_section3_1 hide">
+					<p> My experience working with Brent was a pleasure.
+						 He was completely upfront about the costs and whether the deal 
+						 made sense financially. In fact, when I explained my situation,
+						  he advised me not to refinance unless the current terms improved
+						   even though it cost him business. When he later contacted me about
+						    a better deal,
+						 I jumped at it because he had earned my trust.
+					</p>
+					<div class="slide_pic">
+						<img src="assets/images/tmo.png" alt="testimonialimg"><span>Paul Smith</span>
+					</div>	
+				</div>
+				<div class="slide_inner_section3_1 hide">
+					<p> From the moment John called me I felt a sense of honesty.
+						 I was nervous about working with someone based on past experiences,
+						  but John was honest with me, informative, and he allowed me
+						   to ask the most minute questions, and he answered them where 
+						   I could understand. I trust what he tells me, and feel excited
+						   about my future goals. I also had the pleasure of working with 
+						   Sillo, she was very helpful, 
+						 a very helpful and pleasant group of people.
+					</p>
+					<div class="slide_pic">
+						<img src="assets/images/tmo2.png" alt="testimonialimg"><span>Alan Kith</span>
+					</div>	
+				</div>
+				<div class="slide_inner_section3_1 hide">
+					<p> Thank you so very much for all of your help in securing our 
+						loan for our new home here in Fruitland. You were organized & 
+						thorough & professional, as well as kind which made all 
+						of the difference in our interactions with you. We put our
+						 trust in you and you most definitely came through for us.
+						  Thank you for your patience as well as treating us as 
+						  people rather than just home loan customers. 
+						You stand above the rest, John Burley! Our hats off to you!!
+					</p>
+					<div class="slide_pic">
+						<img src="assets/images/tmo1.png" alt="testimonialimg"><span>Eric Schmidt</span>
+					</div>	
+				</div>
+
+			</div>
+		</section>
         <!-- MAIN ENDS HERE -->
         <footer class="container footer display-flex justify-between">
 			<div class="footer-description">
@@ -135,5 +197,47 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			let index = 0;
+			moveSlide();
+
+			function moveSlide(){
+				let i;
+				let slides = document.querySelectorAll('.slide_inner_section3_1');
+				
+				for (let i = 0; i < slides.length; i++) {
+					if (slides[i].classList.contains('hide')== 1) {
+						slides[i].classList.remove('hide');
+						slides[i].style.left = '101%';
+					}
+					
+				}
+					
+					
+				
+				index++;
+				console.log(' num'+index);
+				if(index > slides.length-1){
+					console.log(' here'+index);
+				index = 0;
+				slides[slides.length - 1].classList.add('hide');
+				slides[slides.length - 1].style.left = '101%';
+
+				}
+			    slides[index].style.left ='0';
+				slides[index].style.transition = '1.5s';
+				
+			
+
+				console.log(' iyihe '+index);
+				if (index != 0) {
+					slides[index - 1].classList.add('hide');
+					slides[index - 1].style.left = '101%';
+				}
+			
+			setTimeout(moveSlide,3000);
+
+			}
+		</script>
 	</body>
 </html>
